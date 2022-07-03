@@ -84,6 +84,7 @@ class GUI(tk.Frame):
         self.id_text = self.canvas.create_text(300, 50, text = "X = 0 [%]\nY = 0 [%]", font = ("Times",15))
         #id = self.canvas.create_text(300, 100, text = "Y = 100 [%]")
 
+        '''
         # generate Frame test3
         self.test3 = tk.Frame(self.master)
         self.canvas_right = tk.Canvas(self.test3, bg="white", height=400, width=400)
@@ -99,7 +100,8 @@ class GUI(tk.Frame):
         self.canvas_right.pack()
 
         # draw lever pos text
-        self.id_text_right = self.canvas_right.create_text(300, 50, text = "X = 0 [%]\nY = 0 [%]", font = ("Times",15))        
+        self.id_text_right = self.canvas_right.create_text(300, 50, text = "X = 0 [%]\nY = 0 [%]", font = ("Times",15))
+        '''
 
         # start thread process
         self.timeEvent()
@@ -160,7 +162,7 @@ class GUI(tk.Frame):
         self.update_key_bg(self.label_eight, "8")
         self.update_key_bg(self.label_nine, "9")
         self.update_lever_pos(self.canvas, self.id_oval, self.id_text,"w","a","x","d","s")
-        self.update_lever_pos(self.canvas_right, self.id_oval_right, self.id_text_right,"u","h","m","k","j")
+        # self.update_lever_pos(self.canvas_right, self.id_oval_right, self.id_text_right,"u","h","m","k","j")
 
 
 if __name__ == "__main__":
