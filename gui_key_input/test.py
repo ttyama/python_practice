@@ -1,3 +1,6 @@
+# Thanks for the URL.
+# https://qiita.com/StrayDog/items/203640d9dc7c801dad0f
+
 import tkinter as tk
 import threading
 import keyboard
